@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap');
+:root {
+    --color-fondo: transparent;
+    --color-contraste: #000;
+    --color-letras: #fff;
+    --color-letras-2: rgb(226, 240, 29);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+} 
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 40px 0px;
+    background: var(--color-fondo);
+    /* font-family: ; */
+    font-family: 'Kaisei Tokumin', serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    color: var(--color-letras);
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: -200px;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: var(--color-letras);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.home{
+    display: flex;
+    background: url("resources/workspace.jpg") no-repeat center;    
+    height: 100vh;
+    color: var(--color-letras);
+    min-height: 500px;
+    font-family: 'Kaisei Tokumin', serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .first-text{
+    font-size: 27px;
+}
+.home .home-content .second-text{
+    font-size: 70px;
+}
+.home .home-content .third-text{
+    font-size: 27px;
+}
+.home .home-content .third-text{
+    font-size: 27px;
+}
+.home .home-content .third-text span{
+    color: var(--color-letras-2);
+    
+}
