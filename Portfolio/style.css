@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1500px;
     padding: 0 80px;
     margin: auto;
 } 
@@ -21,9 +21,9 @@
 .navbar {
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 40px 0px;
     background: var(--color-fondo);
-    /* font-family: ; */
     font-family: 'Kaisei Tokumin', serif;
 }
 .navbar .max-width{
@@ -35,7 +35,6 @@
     color: var(--color-letras);
     font-size: 45px;
     font-weight: 600;
-    margin-left: -200px;
 }
 .navbar .menu li {
     list-style: none;
@@ -46,11 +45,25 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color:var(--color-letras-2);
 }
 
+/* Menu Estilo de Boton */
+.menu-btn {
+    color: var(--color-letras);
+    font-size: 23px;
+    cursor: pointer;
+    display:  none;
+} 
+
+/* Estilos para Home */
 .home{
     display: flex;
-    background: url("resources/workspace.jpg") no-repeat center;    
+    background: url("resources/workspace.jpg") no-repeat center; 
+    background-size: cover;   
     height: 100vh;
     color: var(--color-letras);
     min-height: 500px;
@@ -63,15 +76,99 @@
     font-size: 27px;
 }
 .home .home-content .second-text{
-    font-size: 70px;
+    font-size: 80px;
 }
 .home .home-content .third-text{
-    font-size: 27px;
-}
-.home .home-content .third-text{
-    font-size: 27px;
+    font-size: 57px;
 }
 .home .home-content .third-text span{
     color: var(--color-letras-2);
     
+}
+
+/* Estilos de Acerca de */
+section{
+    padding: 100px 0;
+}
+.about{
+    /* Font family */
+}
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    /* Font family */
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    font-size: 50px;
+    background: var(--color-contraste);
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "¿Quien soy?";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 22px;
+    color: var(--color-letras-2);
+    padding: 5px;
+    background: var(--color-letras);
+    transform: translateX(-50%);
+}
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+    .max-width{
+        padding: 0 50px;
+    } 
+    .menu-btn {
+        display: block;
+        z-index: 1;
+    } 
+    .menu-btn i.active:before{
+        content: "\f00d"; /* Esta es la x */
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111; /* Reemplazar por una imagen o un color mas bonito */
+        text-align: center;
+        padding: 7em;
+        transition: all 0.5s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 50px;        
+    }
+    .home .home-content .second-text{
+        font-size: 70px;
+    }
+    .home .home-content .third-text{
+        font-size: 35px;
+    }
 }

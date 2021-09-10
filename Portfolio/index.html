@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,15 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <!-- Font Awesome Kit's Code -->
+    <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-  <nav class="navbar">
+
+  <!-- Barra de Navegacion -->
+  <nav class="navbar sticky-top"> 
       <div class="max-width">
           <div class="logo">Portfolio</div>
             <ul class="menu">
@@ -21,9 +26,13 @@
                 <li><a href="">Proyectos</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
       </div>
   </nav>
 
+  <!-- Seccion Principal -->
   <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -33,5 +42,29 @@
             </div>
         </div>
   </section>
+
+  <!-- Parrafo de presentacion -->
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quo voluptatum nihil sed ut eius, laborum culpa atque earum qui aperiam 
+      sequi omnis tempore, nulla sunt, cum consequatur! Veritatis nam totam, atque dignissimos voluptatum labore nobis ducimus reiciendis 
+      expedita, commodi et quibusdam quae esse saepe illum provident est voluptatibus assumenda accusantium odit vel fugit, voluptates dolor! 
+      Expedita vero error architecto. Deleniti est iste, error veniam tempore ipsam veritatis nihil adipisci saepe dignissimos facere dolore unde 
+      in vel non distinctio quidem harum dolorem cum corrupti. Debitis repellendus quis ipsam atque necessitatibus distinctio, 
+      voluptate minus ex obcaecati reiciendis nihil iusto provident enim.
+    </p>
+
+    <!-- Acerca de -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Acerca de</h2>
+            <div class="about-content">
+                <div class="column-left">
+                    <img src="Resources/Woody_selfie.jpg" alt="foto-personal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
