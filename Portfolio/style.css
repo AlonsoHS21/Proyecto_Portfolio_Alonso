@@ -92,11 +92,12 @@ section{
 }
 .about{
     /* Font family */
+    margin: 6%;
 }
 .about .title {
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
@@ -129,7 +130,8 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    margin-top: 20vh;
 }
 .about .about-content .left{
     width: 45%;
@@ -146,16 +148,23 @@ section{
 .about .about-content .right .text{
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .about .about-content .right .text span{
     color: var(--color-letras-2);
 }
 .about .about-content .right p{
     text-align: justify;
+    padding-bottom: 5%;
 }
 .about .about-content .right a{
-    /* Estilo de boton */
+    /* Estilo de boton */ 
+    background-color: var(--color-contraste);
+    color: var(--color-letras);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: .25em;
+    
 }
 
 /* Responsive */
